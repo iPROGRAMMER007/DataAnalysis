@@ -1,0 +1,20 @@
+import matplotlib.pyplot as plt
+
+slices = [7,2,4,10]
+activities = ['Sleeping','Eating','Working','Playing']
+cols = ['c','m','r','b']
+
+plt.pie(slices,
+        labels=activities,
+        colors=cols,
+        startangle=90,
+        shadow=True,
+        explode=(0,0.1,0,0),
+        autopct=('%1.1f%%'))
+plt.title('Pie chart')
+plt.show()
+
+
+
+
+
